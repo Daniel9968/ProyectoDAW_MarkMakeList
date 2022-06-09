@@ -1,0 +1,152 @@
+/*HEADER*/
+.header {
+    height: 200px;
+}
+
+.header h1 {
+    margin-top: 20px;
+}
+
+/*BODY*/
+
+body {
+    background: url('../images/fondoDifuminado.jpg');
+    background-repeat: no-repeat;
+    background-position: center 20px;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.content p {
+    margin-bottom: 1em;
+}
+
+body img {
+    margin: 10px;
+}
+
+.imageLeft {
+    float: left;
+}
+
+.content {
+    background-color: rgb(44, 43, 43);
+    background-blend-mode: multiply, multiply;
+    overflow: auto;
+    color: white;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    width: 500px;
+    height: 50%;
+    border-radius: 30px 30px 30px 30px;
+    border: 2px solid black;
+    margin-bottom: 100px;
+}
+
+/*FORM*/
+legend {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+form ul {
+    padding-right: 40px;
+}
+
+form li {
+    list-style: none;
+    margin: 15px;
+}
+
+form label {
+    font-size: 1.1rem;
+}
+
+input {
+    margin-top: 10px;
+    font-size: 1.3rem;
+    width: 85%;
+    background-color: rgb(170, 170, 170);
+    border: 2px solid rgb(80, 80, 80);
+}
+
+input[type="submit"] {
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+    font-size: 1.5rem;
+    width: initial;
+    border-radius: 16px;
+    border-color: rgb(0, 0, 0);
+    margin-top: 30px;
+}
+
+span {
+    margin-left: 10px;
+    font-size: 2rem;
+}
+
+input:invalid+span abbr::before {
+    content: '*';
+    color: red;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+.error {
+    margin-left: 0px;
+    margin-top: 0.5em;
+    font-size: 0.75em;
+    width: 85%;
+}
+#contrasenyaDebilMSG{
+    color: orange;
+}
+
+/*FOOTER*/
+
+.footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: #330867;
+    text-align: center;
+    color: white;
+    clear: both;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*RESPONSIVE*/
+@media all and (min-width: 900px) {
+    button:hover{
+        background-color: rgb(141, 141, 141);
+    }
+    }
+@media all and (max-width: 900px) {
+
+    .content {
+        width: 90%;
+        margin-bottom: 50px;
+    }
+
+    .header {
+        height: 130px;
+    }
+
+    input {
+        width: 80%;
+    }
+
+    .error {
+        width: 80%;
+    }
+}

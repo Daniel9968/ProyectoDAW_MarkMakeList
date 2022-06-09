@@ -1,0 +1,291 @@
+/*MENU*/
+.menu+* {
+    padding-top: 0px;
+}
+/*BODY*/
+
+body {
+    background:
+    radial-gradient(black 15%, transparent 16%) 0 0,
+    radial-gradient(black 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color:#282828;
+    background-size:16px 16px;
+}
+
+.lists {
+    background-color: #fff;
+    background-image:
+    linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+    linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 1.2em;
+    background-blend-mode: multiply, multiply;
+    overflow: auto;
+    color: rgb(44, 43, 43);
+    padding-bottom: 10px;
+    width: 1000px;
+    height: 100%;
+    border: 2px solid black;
+    padding-top: 100px;
+    padding-bottom: 300px;
+}
+
+.lists h1{
+    font-size: 2.5rem;
+    text-align:center;
+}
+
+.lists h2{
+    font-size: 2rem;
+    padding-left: 5.3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.lists h3{
+    display: inline;
+    font-size: 30px;
+}
+
+.lists div {
+    white-space: nowrap;
+}
+
+input.titutlo{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    margin-left: 25%;
+    text-decoration: none;
+}
+
+.lists div p{
+    display: inline;
+    font-size: 30px;
+    padding-left: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.lists div p.num{
+    padding-left: 0px;
+}
+
+.lists span {
+    font-size: 30px;
+}
+
+.tachado{
+    text-decoration:line-through;
+    color: red;
+    cursor: pointer;
+}
+
+.normal{
+    text-decoration:none;
+    color: rgb(44, 43, 43);
+    cursor: pointer;
+}
+
+.pIcon{
+    vertical-align: top;
+    background-size: 100% 100%;
+    background-color: whitesmoke;
+    background-position: 50% 50%; 
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    border-radius: 16px;
+    padding: 0px;
+    border-color: transparent;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.pIcon.basura{
+    background-image: url('../images/bx-trash.svg');
+}
+
+.pIcon.mas{
+    background-image: url('../images/bx-plus.svg');
+}
+
+.pIcon.menos{
+    background-image: url('../images/bx-minus.svg');
+}
+
+.mas{
+    margin-left: 5.2rem;
+}
+
+/*Mensaje*/
+section.mensaje {
+    display: none;
+    left: 15%;
+    right: 15%;
+    border: 2px solid rgb(139, 4, 4);
+    background-color: lightgrey;
+}
+
+section.mensaje p{
+    text-align: center;
+}
+
+/*FOOTER*/
+.footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background:
+    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+    background-size: 20px 20px;
+    text-align: center;
+    color: white;
+    clear: both;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+footer button{
+    display: inline;
+    align-items: center;
+    font-size: 1rem;
+    border-radius: 16px;
+    border-color: transparent;
+}
+
+button#introducir{
+    margin-bottom: 1rem;
+    border-radius: 0px;
+}
+
+button#left{
+    background-image: url('../images/bxs-chevrons-left.svg');
+}
+
+button#right{
+    background-image: url('../images/bxs-chevrons-right.svg');
+}
+
+button#left, button#right{
+    display: inline;
+    background-size: 100% 100%;
+    color: whitesmoke;
+    background-position: 50% 50%; 
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 1rem;
+    border-color: transparent;
+    border-radius: 0px;
+}
+
+input, select{
+    font-size: 30px;
+    background-color: rgb(170, 170, 170);
+    border: 2px solid rgb(80, 80, 80);
+    margin-bottom: 1rem;
+}
+
+input:hover, input:focus, select:hover, select:focus {
+    background-color: white;
+}
+
+button#borrarLista, button#borarTodasLasListas{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+input#cantidad{
+width: 60px;
+}
+
+select#producto{
+width: 900px;
+}
+
+button#borrarLista, button#left{
+    justify-self: end;
+}
+
+button#borarTodasLasListas, button#right{
+    justify-self: start;
+}
+
+footer div{
+    display: grid;
+    grid-template-columns: 4fr 1fr 4fr;
+    width:fit-content;
+    text-align: center;
+}
+
+/*RESPONSIVE*/
+
+@media all and (max-width: 900px) {
+
+    .lists{
+        background-image:
+        linear-gradient(#eee .1em, transparent .1em);
+        width: 100%;
+    }
+    h1{
+        font-size: 2.3rem;
+    }
+    
+    .lists h2{
+        font-size: 1.8rem;
+        padding-left: 1rem;
+        padding-right: 0px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .lists div {
+        display:block;
+    }
+    .lists div p {
+        font-size: 20px;
+        padding-left: 0rem; 
+    }
+    .lists div p.num{
+        padding-left: 0px;
+    }
+    .lists div span {
+        font-size: 1.3rem;
+        display: none;
+    }
+
+    p{
+        padding-left: 0rem;     
+        padding-right: 0px;
+    }
+
+    .pIcon{
+        width: 20px;
+        height: 20px;
+    }
+
+    button.pIcon.mas{
+        margin-left: 10px;
+    }
+
+    select#producto{
+        width: 330px;
+    }
+
+    select#producto, input#cantidad{
+        font-size: 1rem;
+    }
+    select#producto option{
+        overflow-x: hidden;
+    }
+
+}

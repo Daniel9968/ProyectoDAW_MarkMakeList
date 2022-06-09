@@ -1,0 +1,282 @@
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+* {
+    margin: 0px auto;
+}
+
+*:focus {
+    outline: none;
+}
+
+/*FONT FACE*/
+@font-face {
+    font-family: 'Rokkitt';
+    src: url(../fonts/rokkitt-variablefont_wght-webfont.woff2) format(woff2),
+        url(../fonts/rokkitt-variablefont_wght-webfont.woff) format(woff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oxygen';
+    src: url(../fonts/oxygen-regular-webfont.woff2) format(woff2),
+        url(../fonts/oxygen-regular-webfont.woff) format(woff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-family: 'Rokkitt', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Oxygen', sans-serif;
+}
+
+a{
+    color: lightblue;
+}
+
+/*HEADER*/
+
+.header {
+    text-align: left;
+    top: 70%;
+    color: whitesmoke;
+    background: url('../images/shopping-list-128.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    height: 310px;
+    font-size: xx-large;
+    padding-left: 150px;
+    padding-top: 50px;
+}
+
+.header h1 {
+    margin-top: 55px;
+    -webkit-text-stroke: 2px black;
+}
+
+.header p {
+    text-shadow: 1px 0px 0px black,
+        0px 1px 0px black,
+        -1px 0px 0px black,
+        0px -1px 0px black;
+}
+
+/*MENU*/
+
+.menu ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu ul li {
+    float: right;
+}
+
+.menu a:hover, .menu a:focus {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 15px;
+    font-size: 16px;
+}
+
+.menu {
+    position: fixed;
+    top: 0px;
+    background-image: linear-gradient(to bottom, #30cfd0 0%, #330867 100%);
+    width: 100%;
+    height: 50px;
+}
+
+.barraMenu {
+    color: white;
+    padding: 10px 0px 0px 0px;
+}
+
+.holaNombre {
+    color: white;
+    position: fixed;
+    display: block;
+    height: 50px;
+    width: 50%;
+    float: left;
+    margin: 0%;
+    margin-left: 50px;
+    padding: 10px;
+    font-size: 26px;
+    overflow: hidden;
+}
+
+.menu img {
+	position: fixed;
+    height: 50px;
+    width: 50px;
+    margin: 0%;
+    padding-left: 5px;
+}
+
+.menu+* {
+    display: block;
+}
+
+/*Mensaje*/
+
+.mensaje {
+    position:fixed;
+    display: block;
+    top: 25%;
+    left: 10%;
+    right: 10%;
+    border: 2px solid #30cfd0;
+    background-color: lightgrey;
+    margin-bottom: 5px;
+    padding: 10px;
+    box-shadow: 5px 5px 80px black;
+    text-align: center;
+}
+
+.mensaje h2{
+    margin-bottom: 10px;
+}
+
+.mensaje p{
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.buttonMensaje, .buttonMensajeSi, .buttonMensajeNo {
+    background-color: #330867;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.buttonMensajeSi {
+    background-color: rgb(93, 136, 93);
+    margin-right: 20px;
+}
+
+.buttonMensajeNo {
+    background-color: rgb(131, 74, 74);
+}
+
+/*Otros*/
+button{
+    cursor: pointer;
+}
+button:hover, button:focus-visible {
+    background-color: rgb(141, 141, 141);
+}
+
+button:active {
+    background-color: whitesmoke;
+}
+
+input[type=submit] {
+    cursor: pointer;
+}
+
+input[type=submit]:active {
+    background-color: rgb(141, 141, 141);
+}
+
+input:hover, input:focus{
+    background-color: whitesmoke;
+}
+
+.error {
+    color: red;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.exito {
+    color: green;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.displayNone{
+    display: none;
+}
+
+.clicked{
+    background-color: rgb(141, 141, 141);
+}
+
+/*RESPONSIVE*/
+@media all and (max-width: 900px) {
+    .menu a {
+        font-size: 80%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .barraMenu {
+        font-size: 80%;
+        padding: 14px 0px 0px 0px;
+
+    }
+
+    .holaNombre {
+        display: none;
+    }
+    .menu img{
+        width: 30px;
+        height: 30px;
+        top: 0.5em;
+    }
+
+    .header {
+        background: url();
+        padding-left: 10px;
+    }
+
+    .imageLeft {
+        float: none;
+        text-align: center;
+    }
+
+    .header {
+        height: 150px;
+        padding-top: 50px;
+        margin-bottom: 0px;
+    }
+
+    .header h1 {
+        font-size: 90%;
+    }
+
+    .header p {
+        font-size: 50%;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .footer {
+        padding-bottom: 20px;
+    }
+
+    .buttonMensajeSi {
+        margin-right: 0px;
+    }
+}
